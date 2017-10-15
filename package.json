@@ -1,0 +1,32 @@
+{
+  "name": "swarm-init",
+  "version": "1.0.0",
+  "description": "Very simple configuration server to test automatic Docker Swarm formation.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djbb7/swarm-init.git"
+  },
+  "keywords": [
+    "Docker",
+    "Swarm",
+    "Configuration"
+  ],
+  "author": "Daniel Bruzual",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djbb7/swarm-init/issues"
+  },
+  "homepage": "https://github.com/djbb7/swarm-init#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "expressjs": "^1.0.1",
+    "fs": "0.0.1-security",
+    "js-yaml": "^3.10.0"
+  }
+}

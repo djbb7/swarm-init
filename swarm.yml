@@ -1,0 +1,5 @@
+nodes:
+  - id : 1 # mac address
+    role : manager
+  - id : 2 # mac address 
+    role : worker 
