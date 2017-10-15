@@ -13,7 +13,7 @@ var swarm = {
 
 let config = {}
 try {
-    config = yaml.safeLoad(fs.readFileSync('swarm.yml', 'utf8'));
+    config = yaml.safeLoad(fs.readFileSync(process.env.CONFIG_FILE || 'swarm.yml', 'utf8'));
     const indentedJson = JSON.stringify(config, null, 4);
     console.log(indentedJson);
 } catch (e) {
@@ -91,6 +91,6 @@ app.get('/swarm', function (req, res) {
   res.send(swarm)
 })
 
-app.listen(process.env.port || 3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('App started')
 })
